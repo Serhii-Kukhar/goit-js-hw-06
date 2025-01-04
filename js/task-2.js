@@ -1,3 +1,8 @@
+// addItem(newItem) — приймає новий товар newItem і додає його до масиву товарів у приватну властивість items об'єкта.
+
+// removeItem(itemToRemove) — приймає рядок з назвою товару itemToRemove і видаляє його з масиву товарів у приватній властивості items об'єкта.
+
+
 class Storage {
     #items;
     constructor(items) {
@@ -13,13 +18,6 @@ class Storage {
         this.#items = this.#items.filter(item => item !== itemToRemove);
     }
 }
-
-
-// addItem(newItem) — приймає новий товар newItem і додає його до масиву товарів у приватну властивість items об'єкта.
-
-// removeItem(itemToRemove) — приймає рядок з назвою товару itemToRemove і видаляє його з масиву товарів у приватній властивості items об'єкта.
-
-
 
 
 const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
